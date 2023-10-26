@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(photos/ham.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #c9e8fd;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+    background-color: #432333;
+    padding: 10px 20px;
+    display: flex;
+}
+
+#menu-icn {
+    margin-top: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1 {
+    margin: auto;
+}
+
+#ham {
+    height: 100%;
+    width: 34%;
+    background: linear-gradient(180deg, #432333, #a7a7a7);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+}
+
+.ham-hidden {
+    left: -1000px;
+}
+
+.ham-visible {
+    left: 0;
+}
+
+#cancel-icn {
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#ham-content {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ham-content a {
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #c9e8fd;
+    color: #c9e8fd;
+    padding: 10px;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+#ham-content a:hover {
+    opacity: unset;
+}
+
+@media screen and (max-width: 376px) {
+    #menu-icn {
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #ham {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 377px) and (max-width:769px) {
+    #menu-icn {
+        margin: auto 40px;
+    }
+    #ham {
+        width: 88%;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+    #menu-icn {
+        margin: auto 25px;
+    }
+    #ham {
+        width: 70%;
+    }
+}
